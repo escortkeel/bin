@@ -1,0 +1,11 @@
+#/bin/sh
+(
+for i in "$@"
+do
+    if test -f "$i"
+    then
+        avconv -i "$i" -vn -acodec libmp3lame -ac 2 -ab 160k -ar 48000 "$i.mp3"
+    fi
+done
+)
+

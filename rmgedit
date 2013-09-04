@@ -1,0 +1,4 @@
+#/bin/sh
+find . -name \*~
+rm -f $(find . -name \*~)
+

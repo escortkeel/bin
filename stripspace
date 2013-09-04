@@ -1,0 +1,10 @@
+#/bin/sh
+for f in $(find *)
+do
+    if [[ "$(file -bs --mime-type -- "$f")" = text/* ]]
+        then
+            git stripspace < "$f" > "$f.tmp"
+            mv -- "$f.tmp" "$f"
+    fi
+done
+
