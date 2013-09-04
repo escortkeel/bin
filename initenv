@@ -1,0 +1,4 @@
+#/bin/sh
+echo                             >> $HOME/.bashrc
+echo '# Added ~/bin to the PATH' >> $HOME/.bashrc
+echo 'PATH=$HOME/bin:$PATH'      >> $HOME/.bashrc
