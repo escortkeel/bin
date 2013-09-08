@@ -3,4 +3,3 @@ set -e
 encfs ~/.crypt ~/crypt
 (cd ~/crypt; bash)
 fusermount -u ~/crypt
-

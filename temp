@@ -5,4 +5,3 @@ do
     sensors
     sleep 1
 done
-

@@ -7,4 +7,3 @@ do
             mv -- "$f.tmp" "$f"
     fi
 done
-
