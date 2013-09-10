@@ -1,2 +1,2 @@
 #/bin/bash
-latexmk -pdf && latexmk -c && xdg-open *.pdf
+pdflatex *.tex && xdg-open *.pdf
