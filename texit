@@ -1,2 +1,4 @@
 #/bin/bash
-aspell -c -t *.tex && pdflatex *.tex && xdg-open *.pdf
+aspell -c -t *.tex && pdflatex *.tex && (
+xdg-open *.pdf > /dev/null 2>&1 &
+)
