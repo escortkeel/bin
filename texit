@@ -1,2 +1,2 @@
 #/bin/bash
-pdflatex *.tex && xdg-open *.pdf
+aspell -c -t *.tex && pdflatex *.tex && xdg-open *.pdf
